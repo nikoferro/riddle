@@ -74,7 +74,7 @@ export function useAnswerAttempts(
       }
     },
     enabled: !!minBlockNumber,
-    refetchOnWindowFocus: true,
+    refetchOnWindowFocus: false,
   });
 
   if (query.error) {

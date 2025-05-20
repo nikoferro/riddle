@@ -49,7 +49,7 @@ export function useLatestRiddle(): UseQueryResult<RiddleSet | null> {
       }
     },
     staleTime: 30_000,
-    refetchOnWindowFocus: true,
+    refetchOnWindowFocus: false,
   });
 
   if (query.error) {
