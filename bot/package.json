@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "riddle-bot",
+  "version": "1.0.0",
+  "description": "bot that submits a riddle once the answer is solved",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node --loader ts-node/esm --no-warnings src/bot.ts",
+    "build": "tsc",
+    "dev": "ts-node --esm src/bot.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "viem": "^2.29.3"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.3",
+    "@types/node": "^22.12.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "license": "MIT"
+}

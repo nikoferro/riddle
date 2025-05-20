@@ -1,0 +1,8 @@
+{
+  "sepolia": {
+    "OnchainRiddle": {
+      "address": "0x7fe6f85a88151a95db9a9d00e45a6fbc4399ee53",
+      "startBlock": 8338177
+    }
+  }
+}

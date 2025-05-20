@@ -1,0 +1,26 @@
+type AnswerAttempt @entity(immutable: true) {
+  id: Bytes!
+  user: Bytes! # address
+  correct: Boolean! # bool
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+  answerInput: String! # string
+  answerRaw: String! # string
+}
+
+type RiddleSet @entity(immutable: true) {
+  id: Bytes!
+  riddle: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Winner @entity(immutable: true) {
+  id: Bytes!
+  user: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}

@@ -1,0 +1,7 @@
+export const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS;
+
+export const ANSWER_ATTEMPT_TOPIC =
+  "0xe1fc7c66a657ead4c3d3717cd8f74fb75e793a583bdc4105621e53abf02a9b05";
+
+export const WINNER_TOPIC =
+  "0x745c90b656b4aafe296c8ca35aeacfe56cb96c90e1d320e5da643fff1051b6c0";
