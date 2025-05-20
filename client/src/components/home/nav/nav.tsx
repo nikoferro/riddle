@@ -5,6 +5,8 @@ import { getShortAddress } from "@/lib/utils";
 import { useAccount, useBalance, useConnect, useDisconnect } from "wagmi";
 import { Button } from "../../ui/button";
 import { ModeToggle } from "./mode-toggle";
+import Image from "next/image";
+import fox from "@/assets/fox.png";
 
 function ConnectWallet() {
   const { connectors, connect } = useConnect();
@@ -18,7 +20,8 @@ function ConnectWallet() {
       variant="outline"
       onClick={() => connect({ connector: metamaskConnector })}
     >
-      Connect Wallet
+      Connect Using MetaMask
+      <Image src={fox} alt="MetaMask" width={20} height={20} />
     </Button>
   ) : null;
 }

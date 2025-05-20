@@ -42,6 +42,8 @@ Created a small bot which includes a JSON file containing riddles and answers. I
 
 ### Limitations and missing features
 
+- Wallet interaction only supports MetaMask. For simplicity i choose to setup only the MetaMask connector, but in a real-world scenario / use-case, multiple connectors and wallet connect should be supported.
+
 - The client while it does include the basic manifest that comes with a basic Next.js project bootstrapping, does not include all the icons / metadata to support a nice looking bookmark on mobile devices. There is also no SEO related configuration.
 
 - When opening multiple clients in parallel, the clients do listen to contract events to stop the submission of answers in case there is a winner for the current riddle, but this could be more robust, and also the client should listen to attempted answers also to "live-update" this list
